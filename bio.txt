@@ -1,0 +1,17 @@
+Your name: Jaden Kai Rangel
+
+Your email address: jrangel1@trinity.edu
+
+1. What is your favorite color?
+
+#5500FF
+
+2. Who is your favorite musical artist or group?
+
+Igorrr
+
+3. On a scale from 1-10 how comfortable are you feeling with the core Linux 
+commands, e.g. pwd, ls, cp, mv, rm, mkdir, rmdir, cat?
+(1 = not comfortable at all; 10 = completely comfortable)
+
+10
