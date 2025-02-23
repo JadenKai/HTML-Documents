@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  animation: rainbowBackground 1s linear infinite;
+  animation: rainbowBackground 350ms linear infinite;
 }
 @keyframes rainbowBackground {
   0% { background-color: #FF6B6B; }
@@ -44,7 +44,7 @@ body {
 /* Header Styles */
 header {
   grid-area: header;
-  background-color: #333;
+  background-color: #4A412A;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -59,7 +59,7 @@ main {
 /* Footer Styles */
 footer {
   grid-area: footer;
-  background-color: #333;
+  background-color: #4A412A;
   color: #fff;
   padding: 10px;
   text-align: center;
