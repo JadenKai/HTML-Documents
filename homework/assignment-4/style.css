@@ -102,17 +102,16 @@ tbody tr:nth-child(even) {
   background-color: #eee;
 }
 
-/* Ensure the body and main content use flexbox for alignment */
 main {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping for responsiveness */
-  gap: 20px; /* Adds space between elements */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* Style for left-aligned elements */
 .left-align {
-  align-self: flex-start; /* Aligns the element to the start (left) */
-  max-width: 45%; /* Prevents it from stretching too wide */
+  align-self: flex-start;
+  max-width: 45%;
 }
 
 /* Ensures videos and images have a max width */
@@ -124,9 +123,9 @@ video, img {
 /* Responsive Fix: For small screens, stack elements */
 @media (max-width: 768px) {
   main {
-    flex-direction: column; /* Stack items in a column on small screens */
+    flex-direction: column;
   }
   .left-align {
-    max-width: 100%; /* Full width on small screens */
+    max-width: 100%;
   }
 }
