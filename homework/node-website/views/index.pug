@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  header
+    h1 Justin Peter Griffin
+    h2 Click below for Peter and music!
+  div#spawnArea
+  div#change
+    img#changeImage
+    div.caption#changeCaption
+    button#changeBtn Change
+  main
+    p nickles!
+    video(controls, width="600", autoplay, loop, muted)
+      source(src="/images/family-guy-peter-nickles.mp4", type="video/mp4")
+    p Check out roof shopping cart!
+    video.left-align(controls, width="600", autoplay, loop, muted)
+      source(src="/images/roof-shopping-cart-guys.mp4", type="video/mp4")
+    p This is my friend Quagmire and my dog Brian!
+    video(controls, width="600", autoplay, loop, muted)
+      source(src="/images/glenn-quagmire.mp4", type="video/mp4")
+  footer I'm a family guy!
+  
+  // A simple form that POSTs to /submit
+  form(action="/submit", method="POST")
+    input(type="text", name="username", placeholder="Enter your username", required)
+    button(type="submit") Submit
+
+  // Scripts for your current functionality
+  script(src="/js/backgroundMusic.js")
+  script(src="/js/changeImage.js")
+  script(src="/js/spawnImage.js")

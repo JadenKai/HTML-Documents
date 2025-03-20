@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Form Submission Received
+  p You submitted:
+  ul
+    each value, key in data
+      li #{key}: #{value}
+  a(href="/") Back to Home
