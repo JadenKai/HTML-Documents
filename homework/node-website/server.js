@@ -10,6 +10,7 @@ app.set('view engine', 'pug');
 // Stuff for other dirs
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
 
 // Home page from index.pug
 app.get('/', (req, res) => {
