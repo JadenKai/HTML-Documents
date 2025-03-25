@@ -4,7 +4,14 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// index.pug home page
+// Set view engine to Pug and define views directory
+app.set('view engine', 'pug');
+
+// Stuff for other dirs
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Home page from index.pug
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -19,3 +26,4 @@ app.post('/submit', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
