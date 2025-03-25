@@ -9,7 +9,7 @@
 /* Body Styles */
 body {
   margin: 0;
-  animation: rainbowBackground 350ms linear infinite;
+  animation: rainbowBackground 10s linear infinite;
 }
 @keyframes rainbowBackground {
   0% { background-color: #FF6B6B; }

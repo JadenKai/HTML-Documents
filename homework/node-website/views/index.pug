@@ -3,7 +3,7 @@ extends layout
 block content
   header
     h1 Justin Peter Griffin
-    h2 Click below for Peter and music!
+    h2 Click below for Peter!
   div#spawnArea
   div#change
     img#changeImage
@@ -19,14 +19,20 @@ block content
     p This is my friend Quagmire and my dog Brian!
     video(controls, width="600", autoplay, loop, muted)
       source(src="/images/glenn-quagmire.mp4", type="video/mp4")
+      
+    h2 Random guy generator
+    p Enter either quag, stew, pete, or chris
+    input(type="text", id="characterInput", placeholder="Enter character name", required)
+    button(type="button", id="spawnButton") Spawn Character
+
+    canvas#mainCanvas(width="600", height="400", style="border:1px solid #000000; margin-top:20px;")
   footer I'm a family guy!
   
-  // A simple form that POSTs to /submit
   form(action="/submit", method="POST")
-    input(type="text", name="username", placeholder="Enter your username", required)
+    input(type="text", name="username", placeholder="enter username for grade", required)
     button(type="submit") Submit
 
-  // Scripts for your current functionality
   script(src="/js/backgroundMusic.js")
   script(src="/js/changeImage.js")
   script(src="/js/spawnImage.js")
+  script(src="/js/mainSpawn.js")

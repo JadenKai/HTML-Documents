@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     spawnArea.appendChild(img);
 
     // Play audio
-    const audio = new Audio("audio/hehe.mp3");
+    const audio = new Audio("audio/pete.mp3");
     audio.volume = 0.25;
     audio.play();
   });
